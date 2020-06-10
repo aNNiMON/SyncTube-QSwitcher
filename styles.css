@@ -1,0 +1,35 @@
+#qswitcher {
+    position: relative;
+    margin: 0 1rem;
+    color: var(--midground);
+  }
+  #qswitcher_menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    bottom: 0;
+    left: -2rem;
+    min-width: 8rem;
+    margin-bottom: 2rem;
+    padding: .5rem;
+    z-index: 9999;
+    background: var(--background-chat);
+  }
+  #qswitcher_menu li {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.1rem 0.5rem;
+    line-height: 2;
+    color: var(--foreground);
+  }
+  #qswitcher_menu li:hover {
+    background: var(--border);
+    cursor: pointer;
+  }
+  #qswitcher_menu span {
+    font-size: 0.8em;
+    color: var(--midground);
+  }
+  #qswitcher:hover #qswitcher_menu {
+    display: block;
+  }
