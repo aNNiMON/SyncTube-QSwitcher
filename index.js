@@ -86,7 +86,7 @@ synctube.qswitcher = class {
     let promises = videoUrls
       //.map(url => `https://cors-anywhere.herokuapp.com/${encodeURI(url)}`)
       .map(url => `/proxy?url=${encodeURI(url)}`)
-      .map(url => fetch(url, {redirect: 'manual'}));
+      .map(url => fetch(url, {method: 'HEAD', redirect: 'manual'}));
     Promise.all(promises)
       .then(responses => {
         // For all requests, take only successfull 
