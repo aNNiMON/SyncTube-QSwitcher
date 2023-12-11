@@ -32,7 +32,7 @@ Quality switcher plugin for [SyncTube](https://github.com/RblSb/SyncTube).
 Here is some other examples for matcher:
 ```js
 ['^(https?.*_)(${Q})p\.(mp4|webm|m3u8?)', '$1${Q}p.$3']
-// mathes https://site.url/1b3720ac1080460c9_480p.mp4
+// matches https://site.url/1b3720ac1080460c9_480p.mp4
 
 ['^(https?.*\/)(${Q})(\/.*?\.)(mp4|webm|m3u8?)', '$1${Q}$3$4']
 // matches https://site.url/videos/title/480/episode_1.m3u8
